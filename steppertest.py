@@ -32,7 +32,7 @@ print(Rotate,Rotate_Dir,Rot_Spd)
 for x in range(0,(Rotate+1)):
     for pin in range(0,4):
         Pattern_Pin=RPiPins[pin]
-        if Step_Seq[Step_Seq_Num][ping]==1:
+        if Step_Seq[Step_Seq_Num][pin]==1:
             GPIO.output(Pattern_Pin,True)
         else:
             GPIO.output(Pattern_Pin,False)
